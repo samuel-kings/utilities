@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sk_utilities/constants/enums.dart';
-import 'package:sk_utilities/helpers/widgets/loading_widget.dart';
+import 'package:utilities/constants/enums.dart';
+import 'package:utilities/helpers/widgets/loading_widget.dart';
 
 // an elevated button with an icon and text replaced with a loading indicator when loading
 class CustomButtonWithIcon extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:sk_utilities/constants/enums.dart';
+import 'package:utilities/constants/enums.dart';
 
 /// secondaryColor and tertiaryColor are only used in [SKLoadingAnimationType.discreteCircular]
 /// waveDots: https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/waveDots.gif

@@ -1,7 +1,7 @@
-import 'package:sk_utilities/classes/dialogs.dart';
-import 'package:sk_utilities/classes/spacing.dart';
-import 'package:sk_utilities/classes/utilities.dart';
-import 'package:sk_utilities/classes/widgets.dart';
+import 'package:utilities/classes/dialogs.dart';
+import 'package:utilities/classes/spacing.dart';
+import 'package:utilities/classes/utilities.dart';
+import 'package:utilities/classes/widgets.dart';
 
 class SKutilities {
   static Dialogs get dialogs => Dialogs();

@@ -1,11 +1,11 @@
 import 'package:animated_snack_bar/animated_snack_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:sk_utilities/constants/enums.dart';
-import 'package:sk_utilities/helpers/dialogs/no_intenet_widget.dart';
-import 'package:sk_utilities/helpers/dialogs/snackbar.dart';
-import 'package:sk_utilities/helpers/dialogs/snackbar_with_title.dart';
-import 'package:sk_utilities/helpers/dialogs/toast.dart';
-import 'package:sk_utilities/helpers/widgets/notification_status_card.dart';
+import 'package:utilities/constants/enums.dart';
+import 'package:utilities/helpers/dialogs/no_intenet_widget.dart';
+import 'package:utilities/helpers/dialogs/snackbar.dart';
+import 'package:utilities/helpers/dialogs/snackbar_with_title.dart';
+import 'package:utilities/helpers/dialogs/toast.dart';
+import 'package:utilities/helpers/widgets/notification_status_card.dart';
 
 class Dialogs {
   /// shows a dialog indicating no internet connection with a title, message and an action button

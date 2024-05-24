@@ -1,1 +1,1 @@
-const String pkgName = "sk_utilities";
+const String pkgName = "utilities";

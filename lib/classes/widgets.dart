@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart' hide OutlinedButton;
-import 'package:sk_utilities/constants/enums.dart';
-import 'package:sk_utilities/constants/library_colors.dart';
-import 'package:sk_utilities/helpers/widgets/buttons/border_button.dart';
-import 'package:sk_utilities/helpers/widgets/buttons/circular_progress_button.dart';
-import 'package:sk_utilities/helpers/widgets/buttons/custom_button_with_icon.dart';
-import 'package:sk_utilities/helpers/widgets/buttons/gradient_button.dart';
-import 'package:sk_utilities/helpers/widgets/buttons/notification_icon_button.dart';
-import 'package:sk_utilities/helpers/widgets/input_field.dart';
-import 'package:sk_utilities/helpers/widgets/linear_progress_percent_bar.dart';
-import 'package:sk_utilities/helpers/widgets/loading_widget.dart';
-import 'package:sk_utilities/helpers/widgets/notification_status_card.dart';
+import 'package:utilities/constants/enums.dart';
+import 'package:utilities/constants/library_colors.dart';
+import 'package:utilities/helpers/widgets/buttons/border_button.dart';
+import 'package:utilities/helpers/widgets/buttons/circular_progress_button.dart';
+import 'package:utilities/helpers/widgets/buttons/custom_button_with_icon.dart';
+import 'package:utilities/helpers/widgets/buttons/gradient_button.dart';
+import 'package:utilities/helpers/widgets/buttons/notification_icon_button.dart';
+import 'package:utilities/helpers/widgets/input_field.dart';
+import 'package:utilities/helpers/widgets/linear_progress_percent_bar.dart';
+import 'package:utilities/helpers/widgets/loading_widget.dart';
+import 'package:utilities/helpers/widgets/notification_status_card.dart';
 
 class Widgets {
   Widget borderButton(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sk_utilities/constants/enums.dart';
+import 'package:utilities/constants/enums.dart';
 import 'package:toastification/toastification.dart';
 
 void toastSnackbar(

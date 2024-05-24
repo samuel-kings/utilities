@@ -1,7 +1,7 @@
-name: sk_utilities
+name: utilities
 description: "A starter pack for Flutter apps development"
 version: 0.0.1
-homepage: https://github.com/samuel-kings/sk_utilities
+homepage: https://github.com/Performerslink/utilities
 
 environment:
   sdk: '>=3.3.4 <4.0.0'
@@ -26,8 +26,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - packages/sk_utilities/assets/notification_with_dot.png
-    - packages/sk_utilities/assets/notification.png
-    - packages/sk_utilities/assets/no_internet.png
-    - packages/sk_utilities/assets/check_box.png
-    - packages/sk_utilities/assets/close_box.png
+    - packages/utilities/assets/notification_with_dot.png
+    - packages/utilities/assets/notification.png
+    - packages/utilities/assets/no_internet.png
+    - packages/utilities/assets/check_box.png
+    - packages/utilities/assets/close_box.png

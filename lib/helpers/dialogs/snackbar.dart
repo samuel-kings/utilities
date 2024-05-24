@@ -1,9 +1,8 @@
 import 'package:animated_snack_bar/animated_snack_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:sk_utilities/constants/enums.dart';
+import 'package:utilities/constants/enums.dart';
 
-snackbar(BuildContext context,
-    {required String message, SKNotificationStatusType? type}) {
+snackbar(BuildContext context, {required String message, SKNotificationStatusType? type}) {
   final snackBarType = _getSnackBarType(type ?? SKNotificationStatusType.positive);
 
   return AnimatedSnackBar.material(

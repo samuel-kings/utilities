@@ -1,7 +1,7 @@
 import 'package:animated_snack_bar/animated_snack_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:sk_utilities/constants/enums.dart';
-import 'package:sk_utilities/helpers/widgets/notification_status_card.dart';
+import 'package:utilities/constants/enums.dart';
+import 'package:utilities/helpers/widgets/notification_status_card.dart';
 
 /// shows a snackbar with a title, using the [NotificationStatusCard] widget
 snackbarWithTitle(BuildContext context,

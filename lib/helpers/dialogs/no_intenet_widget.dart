@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sk_utilities/constants/asset_names.dart';
-import 'package:sk_utilities/constants/consts.dart';
-import 'package:sk_utilities/helpers/widgets/buttons/custom_button_with_icon.dart';
+import 'package:utilities/constants/asset_names.dart';
+import 'package:utilities/constants/consts.dart';
+import 'package:utilities/helpers/widgets/buttons/custom_button_with_icon.dart';
 
 /// makes use of the custom dialog
 noInternetDialog(BuildContext context,

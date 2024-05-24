@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:sk_utilities/constants/asset_names.dart';
-import 'package:sk_utilities/constants/consts.dart';
+import 'package:utilities/constants/asset_names.dart';
+import 'package:utilities/constants/consts.dart';
 
 /// Notification button
 class NotificationIconButton extends StatelessWidget {

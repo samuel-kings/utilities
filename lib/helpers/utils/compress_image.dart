@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_image_compress/flutter_image_compress.dart';
-import 'package:sk_utilities/constants/enums.dart';
+import 'package:utilities/constants/enums.dart';
 
 class ImageCompressor {
   final _defaultCompressedImage = CompressedImage(type: SKCompressedImageType.file, image: null, errorMessage: null);
