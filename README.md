@@ -15,4 +15,10 @@ utilities:
 ```
 
 Import the package
+```import 'package:utilities/utilities.dart';```
+
+## Usage
+```final dialogs = MyUtilities.dialogs;
+    final widgets = MyUtilities.widgets;
+    final spacing = MyUtilities.spacing;
 ```
