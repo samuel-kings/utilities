@@ -10,7 +10,7 @@ class CustomButtonWithIcon extends StatelessWidget {
   final Function()? onPressed;
   final Color? backgroundColor;
   final TextStyle? textStyle;
-  final SKLoadingAnimationType? loadingAnimationType;
+  final UtilsLoadingAnimationType? loadingAnimationType;
   final Color? loadingAnimationColor;
   final double? loadingAnimationSize;
   final Color? loadingAnimationSecondaryColor;

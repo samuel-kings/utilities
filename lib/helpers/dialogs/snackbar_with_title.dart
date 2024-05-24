@@ -5,7 +5,7 @@ import 'package:utilities/helpers/widgets/notification_status_card.dart';
 
 /// shows a snackbar with a title, using the [NotificationStatusCard] widget
 snackbarWithTitle(BuildContext context,
-    {SKNotificationStatusType? type,
+    {UtilsNotificationStatusType? type,
     required String title,
     required String message,
     String? extraInfo,
@@ -18,7 +18,7 @@ snackbarWithTitle(BuildContext context,
     duration: const Duration(seconds: 5),
     builder: ((context) {
       return NotificationStatusCard(
-          type: type ?? SKNotificationStatusType.positive,
+          type: type ?? UtilsNotificationStatusType.positive,
           title: title,
           message: message,
           extraInfo: extraInfo,

@@ -5,8 +5,8 @@ import 'package:toastification/toastification.dart';
 void toastSnackbar(
   BuildContext context, {
   AlignmentGeometry? alignment,
-  SKNotificationStatusType? type,
-  SKToastificationStyle? style,
+  UtilsNotificationStatusType? type,
+  UtilsToastificationStyle? style,
   required String title,
   String? description,
   Widget? icon,
@@ -14,13 +14,13 @@ void toastSnackbar(
   Color? primaryColor,
   Color? backgroundColor,
   bool? showProgressBar,
-  SKToastProgressBarTheme? progressBarTheme,
-  SKCloseButtonShowType? closeButtonShowType,
+  UtilsToastProgressBarTheme? progressBarTheme,
+  UtilsCloseButtonShowType? closeButtonShowType,
 }) {
-  ToastificationType type_ = _getSnackBarType(type ?? SKNotificationStatusType.positive);
-  ToastificationStyle style_ = _getStyle(style ?? SKToastificationStyle.flat);
+  ToastificationType type_ = _getSnackBarType(type ?? UtilsNotificationStatusType.positive);
+  ToastificationStyle style_ = _getStyle(style ?? UtilsToastificationStyle.flat);
   CloseButtonShowType closeButtonShowType_ =
-      _getCloseButtonShowType(closeButtonShowType ?? SKCloseButtonShowType.onHover);
+      _getCloseButtonShowType(closeButtonShowType ?? UtilsCloseButtonShowType.onHover);
 
   toastification.show(
       context: context,
@@ -43,32 +43,32 @@ void toastSnackbar(
       }));
 }
 
-ToastificationType _getSnackBarType(SKNotificationStatusType type) {
+ToastificationType _getSnackBarType(UtilsNotificationStatusType type) {
   switch (type) {
-    case SKNotificationStatusType.positive:
+    case UtilsNotificationStatusType.positive:
       return ToastificationType.success;
-    case SKNotificationStatusType.negative:
+    case UtilsNotificationStatusType.negative:
       return ToastificationType.error;
-    case SKNotificationStatusType.info:
+    case UtilsNotificationStatusType.info:
       return ToastificationType.info;
-    case SKNotificationStatusType.warning:
+    case UtilsNotificationStatusType.warning:
       return ToastificationType.warning;
   }
 }
 
-ToastificationStyle _getStyle(SKToastificationStyle style) {
+ToastificationStyle _getStyle(UtilsToastificationStyle style) {
   switch (style) {
-    case SKToastificationStyle.flat:
+    case UtilsToastificationStyle.flat:
       return ToastificationStyle.flat;
-    case SKToastificationStyle.flatColored:
+    case UtilsToastificationStyle.flatColored:
       return ToastificationStyle.flatColored;
-    case SKToastificationStyle.minimal:
+    case UtilsToastificationStyle.minimal:
       return ToastificationStyle.minimal;
   }
 }
 
-class SKToastProgressBarTheme extends ProgressIndicatorThemeData {
-  const SKToastProgressBarTheme(
+class UtilsToastProgressBarTheme extends ProgressIndicatorThemeData {
+  const UtilsToastProgressBarTheme(
       {super.circularTrackColor,
       super.linearTrackColor,
       super.color,
@@ -77,13 +77,13 @@ class SKToastProgressBarTheme extends ProgressIndicatorThemeData {
       : super();
 }
 
-CloseButtonShowType _getCloseButtonShowType(SKCloseButtonShowType type) {
+CloseButtonShowType _getCloseButtonShowType(UtilsCloseButtonShowType type) {
   switch (type) {
-    case SKCloseButtonShowType.always:
+    case UtilsCloseButtonShowType.always:
       return CloseButtonShowType.always;
-    case SKCloseButtonShowType.none:
+    case UtilsCloseButtonShowType.none:
       return CloseButtonShowType.none;
-    case SKCloseButtonShowType.onHover:
+    case UtilsCloseButtonShowType.onHover:
       return CloseButtonShowType.onHover;
   }
 }

@@ -1,8 +1,8 @@
-enum SKNotificationStatusType { positive, negative, info, warning }
+enum UtilsNotificationStatusType { positive, negative, info, warning }
 
-enum SKCompressedImageType { file, uint8List }
+enum UtilsCompressedImageType { file, uint8List }
 
-enum SKLoadingAnimationType {
+enum UtilsLoadingAnimationType {
   waveDots,
   inkDrop,
   staggeredDotsWave,
@@ -13,6 +13,6 @@ enum SKLoadingAnimationType {
   dotsTriangle
 }
 
-enum SKToastificationStyle { flat, flatColored, minimal }
+enum UtilsToastificationStyle { flat, flatColored, minimal }
 
-enum SKCloseButtonShowType { always, none, onHover }
+enum UtilsCloseButtonShowType { always, none, onHover }

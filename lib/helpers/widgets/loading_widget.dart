@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:utilities/constants/enums.dart';
 
-/// secondaryColor and tertiaryColor are only used in [SKLoadingAnimationType.discreteCircular]
+/// secondaryColor and tertiaryColor are only used in [UtilsLoadingAnimationType.discreteCircular]
 /// waveDots: https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/waveDots.gif
 /// inkDrop: https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/inkDrop.gif
 /// staggeredDotsWave: https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/staggeredDotsWave.gif
@@ -14,7 +14,7 @@ import 'package:utilities/constants/enums.dart';
 class LoadingWidget extends StatelessWidget {
   const LoadingWidget({super.key, this.type, this.color, this.size, this.secondaryColor, this.tertiaryColor});
 
-  final SKLoadingAnimationType? type;
+  final UtilsLoadingAnimationType? type;
   final Color? color;
   final double? size;
   final Color? secondaryColor;
@@ -28,31 +28,31 @@ class LoadingWidget extends StatelessWidget {
   }
 
   Widget _getAnimationWidget(BuildContext context,
-      {SKLoadingAnimationType? type, Color? color, double? size, Color? secondaryColor, Color? tertiaryColor}) {
-    type ??= SKLoadingAnimationType.staggeredDotsWave;
+      {UtilsLoadingAnimationType? type, Color? color, double? size, Color? secondaryColor, Color? tertiaryColor}) {
+    type ??= UtilsLoadingAnimationType.staggeredDotsWave;
     color ??= Theme.of(context).colorScheme.onTertiaryContainer;
     size ??= 25;
 
     switch (type) {
-      case SKLoadingAnimationType.waveDots:
+      case UtilsLoadingAnimationType.waveDots:
         return LoadingAnimationWidget.waveDots(color: color, size: size);
-      case SKLoadingAnimationType.inkDrop:
+      case UtilsLoadingAnimationType.inkDrop:
         return LoadingAnimationWidget.inkDrop(color: color, size: size);
-      case SKLoadingAnimationType.staggeredDotsWave:
+      case UtilsLoadingAnimationType.staggeredDotsWave:
         return LoadingAnimationWidget.staggeredDotsWave(color: color, size: size);
-      case SKLoadingAnimationType.discreteCircular:
+      case UtilsLoadingAnimationType.discreteCircular:
         return LoadingAnimationWidget.discreteCircle(
             color: color,
             size: size,
             secondRingColor: secondaryColor ?? Colors.teal,
             thirdRingColor: tertiaryColor ?? Colors.orange);
-      case SKLoadingAnimationType.threeArchedCircle:
+      case UtilsLoadingAnimationType.threeArchedCircle:
         return LoadingAnimationWidget.threeArchedCircle(color: color, size: size);
-      case SKLoadingAnimationType.hexagonDots:
+      case UtilsLoadingAnimationType.hexagonDots:
         return LoadingAnimationWidget.hexagonDots(color: color, size: size);
-      case SKLoadingAnimationType.beat:
+      case UtilsLoadingAnimationType.beat:
         return LoadingAnimationWidget.beat(color: color, size: size);
-      case SKLoadingAnimationType.dotsTriangle:
+      case UtilsLoadingAnimationType.dotsTriangle:
         return LoadingAnimationWidget.dotsTriangle(color: color, size: size);
       default:
         return LoadingAnimationWidget.staggeredDotsWave(color: color, size: size);

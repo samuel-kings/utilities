@@ -51,7 +51,7 @@ class Widgets {
           Function()? onPressed,
           Color? backgroundColor,
           TextStyle? textStyle,
-          SKLoadingAnimationType? loadingAnimationType,
+          UtilsLoadingAnimationType? loadingAnimationType,
           Color? loadingAnimationColor,
           double? loadingAnimationSize,
           Color? loadingAnimationSecondaryColor,
@@ -137,7 +137,7 @@ class Widgets {
       LinearProgressPercentBar(
           progress: progress, width: width, filledColor: filledColor, borderColor: borderColor, emptyColor: emptyColor);
 
-  /// secondaryColor and tertiaryColor are only used in [SKLoadingAnimationType.discreteCircular]
+  /// secondaryColor and tertiaryColor are only used in [UtilsLoadingAnimationType.discreteCircular]
   /// waveDots: https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/waveDots.gif
   /// inkDrop: https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/inkDrop.gif
   /// staggeredDotsWave: https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/staggeredDotsWave.gif
@@ -147,21 +147,21 @@ class Widgets {
   /// beat: https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/beat.gif
   /// dotsTriangle: https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/dotsTriangle.gif
   Widget loadingWidget(
-          {SKLoadingAnimationType? type,
+          {UtilsLoadingAnimationType? type,
           Color? color,
           double? size,
 
-          /// secondaryColor and tertiaryColor are only used in [SKLoadingAnimationType.discreteCircular]
+          /// secondaryColor and tertiaryColor are only used in [UtilsLoadingAnimationType.discreteCircular]
           Color? secondaryColor,
 
-          /// secondaryColor and tertiaryColor are only used in [SKLoadingAnimationType.discreteCircular]
+          /// secondaryColor and tertiaryColor are only used in [UtilsLoadingAnimationType.discreteCircular]
           Color? tertiaryColor}) =>
       LoadingWidget(type: type, color: color, size: size, secondaryColor: secondaryColor, tertiaryColor: tertiaryColor);
 
   Widget notificationStatusCard(
           {
           /// positive, negative, info, warning
-          required SKNotificationStatusType type,
+          required UtilsNotificationStatusType type,
           required String title,
           required String message,
           String? extraInfo,

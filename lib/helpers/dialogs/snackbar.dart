@@ -2,8 +2,8 @@ import 'package:animated_snack_bar/animated_snack_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:utilities/constants/enums.dart';
 
-snackbar(BuildContext context, {required String message, SKNotificationStatusType? type}) {
-  final snackBarType = _getSnackBarType(type ?? SKNotificationStatusType.positive);
+snackbar(BuildContext context, {required String message, UtilsNotificationStatusType? type}) {
+  final snackBarType = _getSnackBarType(type ?? UtilsNotificationStatusType.positive);
 
   return AnimatedSnackBar.material(
     message,
@@ -14,15 +14,15 @@ snackbar(BuildContext context, {required String message, SKNotificationStatusTyp
   ).show(context);
 }
 
-AnimatedSnackBarType _getSnackBarType(SKNotificationStatusType type) {
+AnimatedSnackBarType _getSnackBarType(UtilsNotificationStatusType type) {
   switch (type) {
-    case SKNotificationStatusType.positive:
+    case UtilsNotificationStatusType.positive:
       return AnimatedSnackBarType.success;
-    case SKNotificationStatusType.negative:
+    case UtilsNotificationStatusType.negative:
       return AnimatedSnackBarType.error;
-    case SKNotificationStatusType.info:
+    case UtilsNotificationStatusType.info:
       return AnimatedSnackBarType.info;
-    case SKNotificationStatusType.warning:
+    case UtilsNotificationStatusType.warning:
       return AnimatedSnackBarType.warning;
   }
 }

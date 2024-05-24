@@ -7,7 +7,7 @@ import 'package:utilities/constants/library_colors.dart';
 
 class NotificationStatusCard extends StatelessWidget {
   /// positive, negative, info, warning
-  final SKNotificationStatusType type;
+  final UtilsNotificationStatusType type;
   final String title;
   final String message;
   final String? extraInfo;
@@ -28,15 +28,15 @@ class NotificationStatusCard extends StatelessWidget {
   Widget build(BuildContext context) {
     Color firstGradColor = LibColors.green;
 
-    if (type == SKNotificationStatusType.negative) {
+    if (type == UtilsNotificationStatusType.negative) {
       firstGradColor = LibColors.secondaryRed;
     }
 
-    if (type == SKNotificationStatusType.info) {
+    if (type == UtilsNotificationStatusType.info) {
       firstGradColor = LibColors.blue;
     }
 
-    if (type == SKNotificationStatusType.warning) {
+    if (type == UtilsNotificationStatusType.warning) {
       firstGradColor = LibColors.amber;
     }
 
@@ -108,13 +108,13 @@ class NotificationStatusCard extends StatelessWidget {
                         color: firstGradColor.withOpacity(0.1),
                         borderRadius: BorderRadius.circular(5),
                       ),
-                      child: type == SKNotificationStatusType.info || type == SKNotificationStatusType.warning
+                      child: type == UtilsNotificationStatusType.info || type == UtilsNotificationStatusType.warning
                           ? Icon(
-                              type == SKNotificationStatusType.info ? CupertinoIcons.info : Icons.warning_amber_rounded,
+                              type == UtilsNotificationStatusType.info ? CupertinoIcons.info : Icons.warning_amber_rounded,
                               size: 24,
                               color: firstGradColor)
                           : Image.asset(
-                              type == SKNotificationStatusType.positive ? Assets.checkBox : Assets.closeBox,
+                              type == UtilsNotificationStatusType.positive ? Assets.checkBox : Assets.closeBox,
                               height: 24,
                               width: 24,
                               color: firstGradColor,

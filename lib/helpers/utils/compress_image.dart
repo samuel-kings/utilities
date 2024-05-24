@@ -4,7 +4,7 @@ import 'package:flutter_image_compress/flutter_image_compress.dart';
 import 'package:utilities/constants/enums.dart';
 
 class ImageCompressor {
-  final _defaultCompressedImage = CompressedImage(type: SKCompressedImageType.file, image: null, errorMessage: null);
+  final _defaultCompressedImage = CompressedImage(type: UtilsCompressedImageType.file, image: null, errorMessage: null);
 
   /// this is used because the compress image package does not support windows and linux
   bool _isWindowsOrLinux() {
@@ -81,7 +81,7 @@ class ImageCompressor {
       );
 
       if (result != null) {
-        compressedImage.type = SKCompressedImageType.uint8List;
+        compressedImage.type = UtilsCompressedImageType.uint8List;
         compressedImage.image = result;
       } else {
         compressedImage.errorMessage = 'Failed to compress image';
@@ -147,7 +147,7 @@ class ImageCompressor {
         inSampleSize: options.inSampleSize,
       );
 
-      compressedImage.type = SKCompressedImageType.uint8List;
+      compressedImage.type = UtilsCompressedImageType.uint8List;
       compressedImage.image = result;
     } on CompressError catch (e) {
       compressedImage.errorMessage = e.message;
@@ -162,7 +162,7 @@ class ImageCompressor {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 class CompressedImage {
-  SKCompressedImageType type;
+  UtilsCompressedImageType type;
   dynamic image;
   String? errorMessage;
 

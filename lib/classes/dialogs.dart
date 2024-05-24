@@ -21,12 +21,12 @@ class Dialogs {
 
   /// shows a snackbar using the [AnimatedSnackBar.material]
   void showSnackbar(BuildContext context,
-          {required String message, SKNotificationStatusType type = SKNotificationStatusType.positive}) =>
+          {required String message, UtilsNotificationStatusType type = UtilsNotificationStatusType.positive}) =>
       snackbar(context, message: message, type: type);
 
   /// shows a snackbar with a title, using the [NotificationStatusCard] widget
   void showSnackbarWithTitle(BuildContext context,
-          {required SKNotificationStatusType type,
+          {required UtilsNotificationStatusType type,
           required String title,
           required String message,
           String? extraInfo,
@@ -46,8 +46,8 @@ class Dialogs {
   void showToastSnackbar(
     BuildContext context, {
     AlignmentGeometry? alignment,
-    SKNotificationStatusType? type,
-    SKToastificationStyle? style,
+    UtilsNotificationStatusType? type,
+    UtilsToastificationStyle? style,
     required String title,
     String? description,
     Widget? icon,
@@ -55,8 +55,8 @@ class Dialogs {
     Color? primaryColor,
     Color? backgroundColor,
     bool? showProgressBar,
-    SKToastProgressBarTheme? progressBarTheme,
-    SKCloseButtonShowType? closeButtonShowType,
+    UtilsToastProgressBarTheme? progressBarTheme,
+    UtilsCloseButtonShowType? closeButtonShowType,
   }) {
     toastSnackbar(
       context,
