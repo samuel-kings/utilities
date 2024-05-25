@@ -50,13 +50,28 @@ Import the package
 * InputField
 * NotificationIconButton
 * CustomButtonWithIcon
-* LoadingWidget, 8 types based on the 
-![loading_animation_widget](https://pub.dev/packages/loading_animation_widget) package
+* LoadingWidget, 8 types based on the [loading_animation_widget](https://pub.dev/packages/loading_animation_widget) package
+
+waveDots
 ![waveDots](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/waveDots.gif)
+
+inkDrop
 ![inkDrop](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/inkDrop.gif)
+
+staggeredDotsWave
 ![staggeredDotsWave](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/staggeredDotsWave.gif)
+
+discreteCircular
 ![discreteCircular](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/discreteCircular.gif)
+
+threeArchedCircle
 ![threeArchedCircle](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/threeArchedCircle.gif)
+
+hexagonDots
 ![hexagonDots](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/hexagonDots.gif)
+
+beat
 ![beat](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/beat.gif)
+
+dotsTriangle
 ![dotsTriangle](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/dotsTriangle.gif)
