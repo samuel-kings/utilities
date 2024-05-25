@@ -50,12 +50,13 @@ Import the package
 * InputField
 * NotificationIconButton
 * CustomButtonWithIcon
-* LoadingWidget, 8 types based on the [loading_animation_widget](https://pub.dev/packages/loading_animation_widget) package
-[waveDots](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/waveDots.gif)
-[inkDrop](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/inkDrop.gif)
-[staggeredDotsWave](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/staggeredDotsWave.gif)
-[discreteCircular](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/discreteCircular.gif)
-[threeArchedCircle](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/threeArchedCircle.gif)
-[hexagonDots](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/hexagonDots.gif)
-[beat](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/beat.gif)
-[dotsTriangle](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/dotsTriangle.gif)
+* LoadingWidget, 8 types based on the 
+![loading_animation_widget](https://pub.dev/packages/loading_animation_widget) package
+![waveDots](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/waveDots.gif)
+![inkDrop](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/inkDrop.gif)
+![staggeredDotsWave](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/staggeredDotsWave.gif)
+![discreteCircular](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/discreteCircular.gif)
+![threeArchedCircle](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/threeArchedCircle.gif)
+![hexagonDots](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/hexagonDots.gif)
+![beat](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/beat.gif)
+![dotsTriangle](https://raw.githubusercontent.com/watery-desert/assets/main/loading_animation_widget/dotsTriangle.gif)
