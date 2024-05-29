@@ -8,19 +8,19 @@ import 'package:utilities/helpers/functions/secure_storage.dart';
 
 /// This class contains all the utility functions and classes that are used in the app.
 class Functions {
-  static BadWords get badWords => BadWords();
+  BadWords get badWords => BadWords();
 
-  static void changeWebPageTitle(String title) {
+  void changeWebPageTitle(String title) {
     changeWebPageTitle_(title);
   }
 
-  static String generateCode([int length = 6]) {
+  String generateCode([int length = 6]) {
     return codeGenerator(length);
   }
 
-  static ImageCompressor get imageCompressor => ImageCompressor();
+  ImageCompressor get imageCompressor => ImageCompressor();
 
-  static DateTimeFormatter get dateTimeFormatter => DateTimeFormatter();
+  DateTimeFormatter get dateTimeFormatter => DateTimeFormatter();
 
-  static FlutterSecureStorage get secureStorage => secStorage;
+  FlutterSecureStorage get secureStorage => secStorage;
 }
