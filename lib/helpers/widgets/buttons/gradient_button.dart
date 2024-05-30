@@ -16,7 +16,7 @@ class GradientButton extends StatelessWidget {
       this.width,
       this.useNegative,
       this.customGradient,
-      this.textStyle, this.height = 45});
+      this.textStyle, this.height});
 
   @override
   Widget build(BuildContext context) {
