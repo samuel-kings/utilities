@@ -73,6 +73,7 @@ class Widgets {
           {required String text,
           required Function onPressed,
           double? width,
+          double? height,
           bool? useNegative,
           TextStyle? textStyle,
           LinearGradient? customGradient}) =>
@@ -80,6 +81,7 @@ class Widgets {
           text: text,
           onPressed: onPressed,
           width: width ?? 350,
+          height: height ?? 45,
           useNegative: useNegative ?? false,
           customGradient: customGradient,
           textStyle: textStyle);
