@@ -5,6 +5,7 @@ class GradientButton extends StatelessWidget {
   final String text;
   final Function onPressed;
   final double? width;
+  final double? height;
   final bool? useNegative;
   final TextStyle? textStyle;
   final LinearGradient? customGradient;
@@ -15,7 +16,7 @@ class GradientButton extends StatelessWidget {
       this.width,
       this.useNegative,
       this.customGradient,
-      this.textStyle});
+      this.textStyle, this.height = 45});
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +43,7 @@ class GradientButton extends StatelessWidget {
             onPressed();
           },
           child: Container(
-            height: 45,
+            height: height,
             width: width,
             alignment: Alignment.center,
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), gradient: gradient.value, boxShadow: [
