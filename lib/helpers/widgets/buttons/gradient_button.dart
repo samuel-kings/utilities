@@ -33,6 +33,7 @@ class GradientButton extends StatelessWidget {
       valueListenable: gradient,
       builder: (context, value, child) {
         return InkWell(
+          borderRadius: BorderRadius.circular(borderRadius ?? 10),
           splashColor: Colors.transparent,
           onTap: () {
             if (customGradient != null) {
