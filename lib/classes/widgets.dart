@@ -76,7 +76,8 @@ class Widgets {
           double? height,
           bool? useNegative,
           TextStyle? textStyle,
-          LinearGradient? customGradient}) =>
+          LinearGradient? customGradient,
+          double? borderRadius}) =>
       GradientButton(
           text: text,
           onPressed: onPressed,
@@ -84,7 +85,8 @@ class Widgets {
           height: height ?? 45,
           useNegative: useNegative ?? false,
           customGradient: customGradient,
-          textStyle: textStyle);
+          textStyle: textStyle,
+          borderRadius: borderRadius);
 
   Widget notificationIconButton(
           {required bool hasNotif,

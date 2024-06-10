@@ -9,6 +9,7 @@ class GradientButton extends StatelessWidget {
   final bool? useNegative;
   final TextStyle? textStyle;
   final LinearGradient? customGradient;
+  final double? borderRadius;
   const GradientButton(
       {super.key,
       required this.text,
@@ -16,7 +17,9 @@ class GradientButton extends StatelessWidget {
       this.width,
       this.useNegative,
       this.customGradient,
-      this.textStyle, this.height});
+      this.textStyle,
+      this.height,
+      this.borderRadius});
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +33,20 @@ class GradientButton extends StatelessWidget {
       valueListenable: gradient,
       builder: (context, value, child) {
         return InkWell(
+          borderRadius: BorderRadius.circular(borderRadius ?? 10),
           splashColor: Colors.transparent,
           onTap: () {
+            if (customGradient != null) {
+              gradient.value = LinearGradient(colors: [
+                customGradient!.colors.first.withOpacity(0.8),
+                customGradient!.colors.last.withOpacity(0.8)
+              ]);
+
+              Future.delayed(const Duration(milliseconds: 200), () {
+                gradient.value = customGradient!;
+              });
+            }
+
             if (!useNegative! && customGradient == null) {
               // change the gradient to the third one for the pressed one second
               gradient.value = LibColors.secGradient;
@@ -46,13 +61,16 @@ class GradientButton extends StatelessWidget {
             height: height,
             width: width,
             alignment: Alignment.center,
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), gradient: gradient.value, boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.12),
-                offset: const Offset(0.0, 10.0),
-                blurRadius: 14.0,
-              )
-            ]),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(borderRadius ?? 10),
+                gradient: gradient.value,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.12),
+                    offset: const Offset(0.0, 10.0),
+                    blurRadius: 14.0,
+                  )
+                ]),
             child: Text(text, style: textStyle ?? Theme.of(context).textTheme.titleMedium),
           ),
         );
