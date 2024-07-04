@@ -24,7 +24,7 @@ void toastSnackbar(
 
   toastification.show(
       context: context,
-      alignment: alignment,
+      alignment: alignment ?? Alignment.topCenter,
       autoCloseDuration: const Duration(seconds: 5),
       type: type_,
       style: style_,
