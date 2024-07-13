@@ -72,7 +72,8 @@ class Dialogs {
       showProgressBar: showProgressBar,
       progressBarTheme: progressBarTheme,
       closeButtonShowType: closeButtonShowType,
-      durationInSeconds: durationInSeconds
+      durationInSeconds: durationInSeconds,
+      onTap: onTap
     );
   }
 }
