@@ -57,6 +57,7 @@ class Dialogs {
     bool? showProgressBar,
     UtilsToastProgressBarTheme? progressBarTheme,
     UtilsCloseButtonShowType? closeButtonShowType,
+    int durationInSeconds = 5,
   }) {
     toastSnackbar(
       context,
@@ -71,6 +72,7 @@ class Dialogs {
       showProgressBar: showProgressBar,
       progressBarTheme: progressBarTheme,
       closeButtonShowType: closeButtonShowType,
+      durationInSeconds: durationInSeconds
     );
   }
 }
