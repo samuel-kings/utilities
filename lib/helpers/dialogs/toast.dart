@@ -16,7 +16,7 @@ void toastSnackbar(
   bool? showProgressBar,
   UtilsToastProgressBarTheme? progressBarTheme,
   UtilsCloseButtonShowType? closeButtonShowType,
-  double durationInSeconds = 5,
+  required double durationInSeconds,
 }) {
   ToastificationType type_ = _getSnackBarType(type ?? UtilsNotificationStatusType.positive);
   ToastificationStyle style_ = _getStyle(style ?? UtilsToastificationStyle.flat);
@@ -26,7 +26,7 @@ void toastSnackbar(
   toastification.show(
       context: context,
       alignment: alignment ?? Alignment.topCenter,
-      autoCloseDuration: const Duration(seconds: durationInSeconds),
+      autoCloseDuration: Duration(seconds: durationInSeconds),
       type: type_,
       style: style_,
       icon: icon,
